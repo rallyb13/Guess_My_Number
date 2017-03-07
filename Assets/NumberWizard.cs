@@ -35,7 +35,7 @@ public class NumberWizard : MonoBehaviour {
 		if (maxGuessesAllowed == 0) {
 			Application.LoadLevel("Win");
 		} else {
-			guess = Random.Range(min, max);
+			guess = Random.Range(min, max + 1);
 			text.text = guess.ToString();
 			maxGuessesAllowed = maxGuessesAllowed - 1;
 		}
