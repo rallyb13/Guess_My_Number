@@ -28,17 +28,16 @@ public class NumberWizard : MonoBehaviour {
 	void StartGame () {
 		max = 1000;
 		min = 1;
-		guess = 500;
-		
-		max = max + 1;
+		NextGuess();
 	}
 	
 	void NextGuess () {
-		guess = (max + min) / 2;
-		text.text = guess.ToString();
-		maxGuessesAllowed = maxGuessesAllowed - 1;
-		if (maxGuessesAllowed <= 0) {
+		if (maxGuessesAllowed == 0) {
 			Application.LoadLevel("Win");
+		} else {
+			guess = Random.Range(min, max);
+			text.text = guess.ToString();
+			maxGuessesAllowed = maxGuessesAllowed - 1;
 		}
 	}
 }
