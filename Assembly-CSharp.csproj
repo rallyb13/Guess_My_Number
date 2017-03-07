@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{C81F53AD-7CB0-6458-DA54-BAAA95A8C568}</ProjectGuid>
+	<ProjectGuid>{D3606EC3-F340-E412-F08C-BE55C1A43F4F}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LevelManager.cs" />
+     <Compile Include="Assets\NumberWizard.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity 4.6/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
